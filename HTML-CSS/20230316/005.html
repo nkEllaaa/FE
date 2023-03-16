@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perspective</title>
+    <style>
+        .원본 {
+            display: flex;
+            width: 1000px;
+            height: 800px;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            margin: 100px auto;
+            perspective: 400px;
+        }
+
+        .회전패널 {
+            width: 200px;
+            height: 200px;
+            background: aqua;
+            transform: rotateY(-45deg);
+        }
+            /*  perspective-origin 사용법 */
+
+/* 값이 하나일 경우 */
+/* perspective-origin: x-position; */
+
+/* 값이 두개일 경우 */
+/* perspective-origin: x-position y-position; */
+
+/* perspective-origin: top;    y-position의 값이 0과 같습니다. */
+/* perspective-origin: bottom; y-position의 값이 100%와 같습니다. */
+/* perspective-origin: left;   x-position의 값이 0과 같습니다. */
+/* perspective-origin: right;  x-position의 값이 100%와 같습니다. */
+
+/* perspective-origin: center center; */
+/* perspective-origin: 50% 50%; */
+/* perspective-origin:500px 400px; */
+/* 위의 세가지 경우는 모두 소실점이 동일합니다. */
+
+    </style>
+</head>
+<body>
+    <div class="원본">
+        <div class="회전패널"></div>
+        <div class="회전패널"></div>
+        <div class="회전패널"></div>
+        <div class="회전패널"></div>
+        <div class="회전패널"></div>
+
+        <div class="회전패널"></div>
+        <div class="회전패널"></div>
+        <div class="회전패널"></div>
+        <div class="회전패널"></div>
+        <div class="회전패널"></div>
+        
+        <div class="회전패널"></div>
+        <div class="회전패널"></div>
+        <div class="회전패널"></div>
+        <div class="회전패널"></div>
+        <div class="회전패널"></div>
+    </div>
+</body>
+</html>
