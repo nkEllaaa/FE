@@ -1,0 +1,30 @@
+$width: 100px;
+$height: 100px;
+$radius: 10%;
+$js: justify-content;
+$ai: align-items;
+
+@mixin card ($js, $ai){
+  display: flex;
+  justify-content: $ai;
+  align-items: $js;
+}
+@mixin item {
+  width: $width;
+  height: $height;
+  border-radius: $radius;
+}
+.card {
+  @include card($js:center, $ai:center);
+}
+.card-items {
+  @include item ($width, $height, $radius)
+}
+.product {
+  @include card($js:right, $ai:right, $radius: +10%);
+}
+// .product-items {
+//   width: 100px;
+//   height: 100px;
+//   border-radius: 20%;
+// }

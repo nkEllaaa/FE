@@ -1,0 +1,11 @@
+.card {
+  display: flex;
+  justify-content: "cneter";
+  align-items: "cneter";
+}
+
+.procuct {
+  display: flex;
+  justify-content: "right";
+  align-items: "right";
+}/*# sourceMappingURL=020_믹스인실습답.css.map */

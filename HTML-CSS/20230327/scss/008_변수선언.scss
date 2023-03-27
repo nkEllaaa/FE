@@ -1,0 +1,20 @@
+$ncho1: #000;
+$ncho2: #0ff;
+//한글 변수 권장하지 않음
+//고유 명사는 가능
+$나경: blue;
+$큰글자 : 34px;
+
+.one {
+  font-size: $큰글자;
+  color: $ncho2;
+}
+
+.two {
+  background-color: $ncho1;
+  color: $ncho2;
+}
+
+.three {
+  color: $나경;
+}

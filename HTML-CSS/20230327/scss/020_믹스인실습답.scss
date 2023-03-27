@@ -1,0 +1,22 @@
+@mixin flex($direction) {
+  display: flex;
+  justify-content: $direction;
+  align-items: $direction;
+}
+@mixin item($length, $radius) {
+  width: $length;
+  height: $lenght;
+  border-radius: $radius;
+}
+.card {
+  @include flex('cneter');
+}
+.procuct {
+  @include flex('right');
+}
+.card-item {
+  @include item(100px, 10%);
+}
+.procuct-item {
+  @include item(200px, 25%);
+}
