@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //변수 : 변할 수 있는 값  : var, let
+      //var : 키워드 생략하고도 변수 선언 가능하나 생략하면 안됨, var 자체를 권장하지 않음
+      //엄격모드 에러남
+    //상수 : (변하지 않는 값, 파이, DOM 요소)  :const
+      //let과 const는 블록-레벨
+      //대부분의 변수는 const로 선언하는 것을 권장 
+      //의도하지 않은 값의 변경을 방지할 수 있음
+
+      //가독성을 높일 수 있음
+      const x = 100;
+      const y = 1000;
+      //1000줄 코드
+      console.log(x,y);
+      //x는 100인걸 확신할 수 있지만 y는 장담할 수 없음. 그래서 가독성이 높아짐
+
+      //scope, 유효범위
+      if(true){
+        let x = 100;
+        console.log(x);
+      }
+      console.log(x);
+
+
+      if(true){
+        const x = 100;
+        console.log(x);
+      }
+      console.log(x);
+  </script>
+</body>
+</html>

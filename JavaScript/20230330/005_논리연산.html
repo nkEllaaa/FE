@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //산술연산, 논리연산, 비교연산
+    const x = true;
+    const y = false;
+    const z = 10;
+
+    //and는 둘 중에 하나라도 false라면 false가 됩니다. 둘 다 true 여야만 true 입니다.
+    //or는 둘 중에 하나라도 true라면 true가 됩니다. 둘 다 false 여야만 false 입니다.
+    console.log(x && y); //and(곱)
+    console.log(x || y); //or(합)
+    console.log(!x);
+    console.log(!!z);
+
+    //중요하진 않음
+    console.log(x && y);
+    console.log(x && y);
+
+    //비트연산자 주엥서 유일하게 중요한 연산(부정연산)
+    //console.log(~3)
+
+    // 연습문제
+        // 1. true && true
+        // 2. true && false
+        // 3. false || true
+        // 4. true || true
+
+        // 매우 중요하지 않습니다.
+        // console.log(3 & 5);
+        // 0011
+        // 0101
+        // ----
+        // 0001
+        // console.log(3 | 5);
+        // 0011
+        // 0101
+        // ----
+        // 0111
+
+        // 비트연산자 중에서 유일하게 조금 중요한 연산(부정연산)
+        // console.log(~3)
+        // console.log(~~3)
+        // console.log(~~3.14)
+        // console.log(parseInt(3.14))
+        // console.log(parseInt('3.14'))
+        // console.log(parseInt('3.14abc'))
+  </script>
+</body>
+</html>
