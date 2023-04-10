@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traffic Lights</title>
+    <style>
+      div {
+        width: 500px;
+        height: 500px;
+        background-color: black;
+        margin: auto;
+      }
+      ul {
+        display: flex;
+        margin-top: 100px;
+      }
+
+      li {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .red {
+        background-color: red;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      .green {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="canvas"></div>
+    <ul>
+      <li>
+        <button type="button" class="btn-red">빨강</button>
+      </li>
+      <li>
+        <button type="button" class="btn-yellow">노랑</button>
+      </li>
+      <li>
+        <button type="button" class="btn-green">초록</button>
+      </li>
+    </ul>
+
+    <script>
+      const redBtn = document.querySelector('.btn-red');
+      const yellowBtn = document.querySelector('.btn-yellow');
+      const greenBtn = document.querySelector('.btn-green');
+      const canvasBox = document.querySelector('.canvas');
+
+      redBtn.addEventListener('click', function () {
+        canvasBox.classList.toggle('red');
+      });
+
+      yellowBtn.addEventListener('click', function () {
+        canvasBox.classList.toggle('yellow');
+      });
+
+      greenBtn.addEventListener('click', function () {
+        canvasBox.classList.toggle('green');
+      });
+    </script>
+  </body>
+</html>
