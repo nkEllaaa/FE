@@ -1,0 +1,24 @@
+<body>
+  <main>
+    <div class="rectangle"></div>
+    <ul class="list-container">
+      <li><button onclick="{handleChangeRectangleColor('red')}">빨강</button></li>
+      <li><button onclick="{handleChangeRectangleColor('yellow')}">노랑</button></li>
+      <li><button onclick="{handleChangeRectangleColor('green')}">초록</button></li>
+    </ul>
+  </main>
+</body>
+
+<script>
+  const rectangle = document.querySelector('.rectangle');
+  const rectangleClassList = rectangle.classList;
+
+  function removeClassName(color) {
+    rectangleClassList.remove(rectangleClassList[1]);
+  }
+
+  function handleChangeRectangleColor(color) {
+    removeClassName(color);
+    rectangleClassList.add(color);
+  }
+</script>
