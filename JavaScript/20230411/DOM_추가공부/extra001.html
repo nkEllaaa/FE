@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="parent">
+    <div class="child" id="child1"></div>
+    <div class="child" id="child2"></div>
+  </div>
+  <script>
+    // document.getElementById() 
+    // HTML 'id' 속성(Attributes)값으로 검색한 요소를 반환
+    // 가장 먼저 찾은 요소
+    //만약 id 명을 잘못 입력해서 찾을 수 없다면 null반환
+    const el = document.getElementById('child2')
+    
+    // document.querySelector()
+    // CSS 선택자로 검색한 요소를 가장 먼저 찾은 하나 반환
+    // 검색결과가 없으면 null 반환
+    const qu = document.querySelector('.child:first-child')
+
+    // document.querySelectorAll()
+    // CSS 선택자로 검색한 모든 요소를 Nodelist로 반환
+    // Nodelist 객체는 forEach()를 사용할 수 있음
+    const nodeList = document.querySelectorAll('.child')
+    console.log(nodeList)
+    nodeList.forEach(el => console.log(el.textContent));
+  </script>
+</body>
+</html>
